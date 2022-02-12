@@ -2,16 +2,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>WSO2-EXT</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0.0</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
+    <artifactId>Websocket-Synapse-Handler</artifactId>
 
-    <groupId>org.example</groupId>
-    <artifactId>WSO2-EXT</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0.0</version>
-    <modules>
-        <module>Basics</module>
-        <module>Websocket-Synapse-Handler</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.synapse</groupId>
+            <artifactId>synapse-core</artifactId>
+            <version>2.1.7-wso2v183</version>
+        </dependency>
+    </dependencies>
+
     <repositories>
         <repository>
             <id>wso2-nexus</id>
@@ -35,8 +41,5 @@
             <url>https://maven.wso2.org/nexus/content/groups/wso2-public/</url>
         </pluginRepository>
     </pluginRepositories>
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
+
 </project>

@@ -13,6 +13,6 @@ Ex:
 enabled_global_handlers= ["WebSocketHandler"]
 [synapse_handlers]
 WebSocketHandler.name= "WebSocketHandler"
-WebSocketHandler.class= "com.sample.WebSocketHandler"
+WebSocketHandler.class= "com.apim.sample.WebSocketHandler"
    ```
 

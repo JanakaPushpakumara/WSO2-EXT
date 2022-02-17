@@ -1,10 +1,9 @@
-package com.sample;
+package com.esb.sample;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.synapse.AbstractSynapseHandler;
 import org.apache.synapse.MessageContext;
-import org.apache.synapse.core.axis2.Axis2MessageContext;
 
 import java.util.UUID;
 

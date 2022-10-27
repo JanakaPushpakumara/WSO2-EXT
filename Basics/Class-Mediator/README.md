@@ -19,6 +19,6 @@ very user-specific scenarios, for which, there is no built-in mediator that alre
 * ```  <class name="com.sample.TestMediator"/> ```
 * ```
     <class name="com.sample.TestMediator">
-       <property name="property1" value="value1")/>
+       <property name="property1" value="value1"/>
     </class>
     ```

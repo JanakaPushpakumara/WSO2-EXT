@@ -1,4 +1,4 @@
-# Class Mediator
+# Synapse handler
 The Synapse handler creates an instance of a custom-specified class and sets it as a global synapse handler. 
 The class must implement the **org.apache.synapse.AbstractSynapseHandler** interface. 
 If any properties are specified, the corresponding setter methods are invoked once on the handler class during initialization.

@@ -8,9 +8,20 @@ Therefore, it is recommended to use the for very user-specific scenarios, for wh
 that already provides the required functionality.
 
 ## **Syntax**
-To engage the deployed Synapse handler, you need to add the following configuration to the <EI_HOME>/conf/synapse-handlers.xml file.
+The deployment.toml configuration
+```
+[synapse_handlers]
+TestSynapseHandler.enabled = true
+TestSynapseHandler.class = "com.sample.TestSynapseHandler"
+```
+#### **Syntax for old EI/ESB/APIM products**
+To engage the deployed Synapse handler, you need to add the following configuration to the <WSO2_HOME>/conf/synapse-handlers.xml file.
 ```
 <handlers>
     <handler name="TestSynapseHandler" class="com.sample.TestSynapseHandler"/>
 </handlers>
 ```
+
+
+
+

@@ -2,19 +2,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>WSO2-EXT</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0.0</version>
-    <modules>
-        <module>Basics</module>
-        <module>Websocket-APIM-Synapse-Handler</module>
-        <module>Websocket-ESB-Synapse-Handler</module>
-        <module>Role-Based-Authorization-RestAPI-Handler</module>
-        <module>Sequence-Invoker-Class-Mediator</module>
-    </modules>
+    <parent>
+        <artifactId>WSO2-EXT</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>Sequence-Invoker-Class-Mediator</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.synapse</groupId>
+            <artifactId>synapse-core</artifactId>
+            <version>2.1.7-wso2v271</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
     <repositories>
         <repository>
             <id>wso2-nexus</id>
@@ -38,8 +43,4 @@
             <url>https://maven.wso2.org/nexus/content/groups/wso2-public/</url>
         </pluginRepository>
     </pluginRepositories>
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
 </project>

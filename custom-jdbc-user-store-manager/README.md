@@ -14,3 +14,4 @@ allowed_user_stores=["org.wso2.carbon.user.core.jdbc.UniqueIDJDBCUserStoreManage
 ```
 4. Restart the API Manager. 
 5. The custom User store will be visible in the carbon console under User Stores.
+![image](https://github.com/JanakaPushpakumara/WSO2-EXT/assets/37293166/7e08150e-0418-4297-822f-0b7909c4e7c1)

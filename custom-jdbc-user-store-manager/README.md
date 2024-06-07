@@ -1,5 +1,5 @@
 
-This user store is compatible with APIM 4.0.0 and has the custom unique user id JDBC user store implementation.
+This user store is compatible with APIM 4.0.0, 4.1.0 and 4.2.0 and has the custom unique user id JDBC user store implementation.
 
 # Steps
 
